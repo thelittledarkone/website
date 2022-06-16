@@ -1,0 +1,574 @@
+/*Profile*/
+#profileContainer{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    background-color: rgba( 73, 63, 99, 0.3);
+    color: aliceblue;
+}
+#profileContainer h2{
+    color: #e4c9fc
+}
+.table{
+    border-color: rgba( 105, 79, 169);
+}
+tr{
+    cursor: pointer;
+}
+tr:hover{
+    color: black;
+    border-color: rgb( 105, 79, 169);
+    background-color: floralwhite;
+}
+
+.privacyRadio label{
+    margin-right: 30px;
+}
+.cityHidden{
+    display: none;
+}
+.passwordHeader{
+    margin-top: 50px;
+}
+.detailsTable{
+    margin-bottom: 5px;
+}
+
+.settingsBtn{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+#pictureCell{
+    min-width: 100px;
+}
+
+
+.statsTable tr td.centredCell{
+    vertical-align: middle;
+}
+.fTablePhone{
+    display: none;
+}
+.pTable{
+    display: none;
+}
+.dpTable{
+    display: none;
+}
+.dTable{
+    margin-bottom: 0;
+}
+.vTable{
+    display: none;
+}
+
+.eventBtnContainer{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.aboutgame{
+    margin-bottom: 20px;
+}
+.reviewpagemain{
+    margin-bottom: 80px;
+}
+.sm_expandable__btn__wrapper {
+	width: 20px;
+	height: 20px;
+	float: right;
+}
+.sm_expandable__btn{
+    padding: 6px 9px;
+}
+.sm_expandable__btn:before {
+	width: 3px;
+  height: 12px;
+  top: 5px;
+  left: 9px;
+}
+.sm_expandable__btn:after {
+  width: 12px;
+  height: 3px;
+  top: 9px;
+  left: 5px;
+}
+
+.inlineTitle h3{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.phonegameeventbtn{
+    display: none;
+}
+.phonegametitle{
+    display: none;
+}
+
+#myEvents{
+    margin-bottom: 500px;
+}
+.gameeventTitle{
+    text-align: left;
+    font-size: 50px
+}
+.editionForm select{
+    background-color: darkslategrey;
+}
+.btnSkinny{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/*Messages*/
+#messageContainer{
+    color: aliceblue;
+    margin-bottom: 50px;
+    background-color: rgba( 73, 63, 99, 0.3);
+    padding-bottom: 10px;
+}
+.darkened{
+    background-color: rgba( 73, 63, 99, 0.3);
+}
+.allMessageResults{
+    background-color: rgba( 73, 63, 99, 0.5);
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+.allSentMessageResults{
+    background-color: rgba( 73, 63, 99, 0.5);
+    border-bottom-right-radius: 20px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+.mainMessage{
+    margin-bottom: 5px;
+}
+.expandableBtnContainer{
+    text-align: center;
+}
+.eventBtn{
+    margin-top: 20px;
+}
+.senderContainer{
+    text-align: center;
+    padding: 0;
+}
+.detailsContainer{
+    text-align: left;
+    min-width: 260px;
+    padding: 0;
+}
+.detailsContainer span{
+    font-size: 1.5em;
+}
+.priceContainer{
+    text-align: right;
+    min-width: 70px;
+    padding: 5px;
+}
+.mainTable, .marginlessTable{
+    margin-bottom: 0;
+}
+
+/*Single Message*/
+.senderBox{
+    text-align: center;
+}
+#singleMessageDetails{
+    background-color: rgba( 73, 63, 99, 0.5);
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    margin-bottom: 10px;
+    padding: 0 0 10px 15px;
+}
+.messageContent{
+    font-size: 1.5em;
+}
+.replyToMessage{
+    margin-bottom: 5px;
+}
+.commentsTable tbody tr td{
+    border-bottom: 0;
+    border-top: 0;
+}
+
+
+.bookBtn{
+    margin-right: 0;
+    margin-left: 10px;
+    padding: 5px 8px;
+}
+.bookBtnContainer{
+}
+
+.moreInfoContainer{
+    max-height: 10rem;
+}
+
+.friendBtn{
+    font-size: 15px;
+}
+
+.voteBtn{
+    margin-right: 10px;
+}
+.btnHighlightedR{
+    background: linear-gradient(rgba( 245, 55, 55, 0.877 ), rgba( 200, 200, 200, 0.815 ));
+    border-color: rgba( 245, 55, 55, 0.803 );
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075), 0px 0px 8px rgba( 245, 55, 55, 0.992 );
+    margin-right: 10px;
+}
+.btnHighlightedG{
+    background: linear-gradient(rgba( 107, 206, 102, 0.877 ), rgba( 200, 200, 200, 0.815 ));
+    border-color: rgba( 107, 206, 102, 0.803 );
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075), 0px 0px 28px rgba( 57, 156, 52, 0.992 );
+    margin-right: 10px;
+}
+.btnDulledR{
+    background: linear-gradient(rgba( 245, 55, 55, 0.877 ), rgba( 0, 0, 0, 0.415 ));
+    margin-right: 10px;
+}
+.btnDulledG{
+    background: linear-gradient(rgba( 57, 156, 52, 0.877 ), rgba( 0, 0, 0, 0.415 ));
+    margin-right: 10px;
+}
+
+#mainEventContainer, #playersContainer{
+    background-color: rgba( 73, 63, 99, 0.5);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+#hostContainer{
+    background-color: rgba( 73, 63, 99, 0.5);
+    border-radius: 20px;
+    margin-bottom: 100px;
+    padding: 0 15px;
+}
+#playersContainer, #playersContainer th{
+    text-align: center;
+}
+#playersContainer h2{
+    text-align: left;
+}
+.radiusForm{
+    position: absolute;
+    right: 20px;
+}
+.radiusForm select{
+    background-color: darkslategrey;
+}
+
+.btnTbl{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.borderedRight{
+    border-right: 1px solid aliceblue;
+}
+.mrgRight{
+    margin-right: 1.8vw;
+    margin-bottom: 0;
+}
+.hostPhone{
+    display: none;
+    padding: 10px;
+}
+.playerPhone{
+    display: none;
+    padding: 10px;
+}
+.phoneHostInfo{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.msgBtn{
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+.profilePageTbl{
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+.profilePageTbl span{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.profilePageBtns{
+    margin-bottom: 20px;
+}
+
+/*Friends*/
+.panel-custom{
+    text-align: center;
+    background-color: rgba( 73, 63, 99, 0.5);
+    height: 100%;
+    min-height: 105px;
+}
+
+.panel-heading{
+    padding: 0;
+}
+.FPic{
+    margin-top: 3px;
+}
+.unFfriend{
+    padding: 0 5px;
+    margin-top: 5px;
+}
+.moreFDetails{
+    padding: 0 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.friendContainer{
+    min-height: 115px;
+    max-height: 150px; 
+}
+#allFriendRequests{
+    margin: 10px;
+}
+.panel-name p{
+    font-size: 5px;
+}
+.panel-name{
+    margin-bottom: 0;
+}
+
+.productPanel{
+    margin-bottom: 5px;
+    min-height: 250px;
+}
+/*Star Reviews*/
+/* use reverse flexbox to take advantage of flex-direction: reverse */
+.star-rating {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 40px auto;
+  position: relative;
+}
+/* hide the inputs */
+.star-rating input {
+  display: none;
+}
+/* set properties of all labels */
+.star-rating > label {
+  width: 30px;
+  height: 30px;
+  font-family: Arial;
+  font-size: 30px;
+  transition: 0.2s ease;
+  color: orange;
+}
+/* give label a hover state */
+.star-rating label:hover {
+  color: #7032f5;
+  transition: 0.2s ease;
+}
+.star-rating label:active::before {
+  transform:scale(1.1);
+}
+
+/* set shape of unselected label */
+.star-rating label::before {
+  content: '\2606';
+  position: absolute;
+  top: 0px;
+  line-height: 26px;
+}
+/* set full star shape for checked label and those that come after it */
+.star-rating input:checked ~ label:before {
+  content:'\2605';
+}
+
+
+/*Media Queries*/
+@media (min-width: 440px) and (max-width: 991px){
+    .organiserPic{
+        max-width: 70%;
+    }
+    .mainMessage{
+        padding-left: 15px;
+    }
+    .btn{
+        font-size: 1.15em;
+        padding: 5px 8px;
+        margin-right: 10px;
+    }
+    .btnSkinny{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .content__btn__wrapper {
+        margin-right: 0;
+    }
+    .profilePageProfilePic{
+        height: auto;
+        width: 100px;
+    }
+    .hostPhone{
+        display: block;
+    }
+    .hostWide{
+        display: none;
+    }
+    .playerPhone{
+        display: block;
+    }
+    .playerWide{
+        display: none;
+    }
+    .dTable{
+        display: none;
+    }
+    .dpTable{
+        display: block;
+        margin-bottom: 0;
+    }
+    .dpTable tbody{
+        width: 100vw;
+    }
+    .vTable{
+        display: block;
+    }
+    
+    .gametitle{
+        display: none;
+    }
+    .phonegametitle{
+        display: block;
+    }
+    .phonegameeventbtn{
+        display: block;
+        position: absolute;
+        right: 5px;
+    }
+    .gameeventbtn{
+        display: none;
+    }
+    .smphone{
+        display: none;
+    }
+    
+    .productPanel{
+        min-height: 170px;
+    }
+    .lrgBtn{
+        margin-top: 5px;
+        width: 150px;
+        font-size: 25px;
+    }
+    
+}
+@media (max-width: 439px){
+    .organiserPic{
+        max-width: 80%;
+    }
+    .mainMessage{
+        padding-left: 15px;
+    }
+    .detailsContainer{
+        width: 100%;
+    }
+    .btn{
+        font-size: 1.05em;
+        padding: 3px 6px;
+        margin-right: 5px;
+    }
+    .btnSkinny{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .content__btn__wrapper {
+        margin-right: 0;
+    }
+    .hostPhone{
+        display: block;
+    }
+    .hostWide{
+        display: none;
+    }
+    .playerPhone{
+        display: block;
+    }
+    .playerWide{
+        display: none;
+    }
+    .fTablePhone{
+        display: block;
+        padding-left: 20px;
+    }
+    .fTable{
+        display: none;
+    }
+    .dTable{
+        display: none;
+    }
+    .pTable{
+        display: block;
+    }
+    .vTable{
+        display: block;
+    }
+    .ratingTitle{
+        font-size: 20px;
+    }
+    .gametitle{
+        display: none;
+    }
+    .phonegametitle{
+        display: block;
+    }
+    .phonegameeventbtn{
+        display: block;
+        position: absolute;
+        right: 5px;
+    }
+    .gameeventbtn{
+        display: none;
+    }
+    .smphone{
+        display: block;
+        position: relative;
+        float: right;
+        right: 0;
+    }
+    .bgphone{
+        display: none;
+    }
+    
+    .productPanel{
+        min-height: 170px;
+    }
+    .lrgBtn{
+        margin-top: 5px;
+        width: 120px;
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

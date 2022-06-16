@@ -1,0 +1,26 @@
+.btnContainer{
+    margin-bottom: 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nxtstageBtn{
+    margin-left: 8px;
+}
+
+table, form{
+    font-size: 18px;
+}
+.playerrow{
+    border-bottom: solid 1px dimgray;
+}
+table tr td{
+    padding: 5px 5px 5px 0;
+}
+.tournProfilePic{
+    width: 30px;
+}
+.winBtn{
+    padding: 5px 10px;
+}

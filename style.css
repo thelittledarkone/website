@@ -1,0 +1,981 @@
+/*Body Style*/
+body{
+    background: url(images/pngwing.com.png) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Arvo', serif;
+}
+
+/*General*/
+.headerContainer{
+    min-height: 163px;
+}
+.centredCell{
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+a{
+    color: aliceblue;
+}
+.table tr:hover{
+    background-color: transparent;
+    color: aliceblue;
+}
+.btn:focus, .btn:active{
+    outline: none;
+    color: aliceblue;
+}
+
+/*
+.table-condensed{
+    word-break: break-all;
+}
+*/
+/*Navbar css*/
+
+.navbar-custom{
+    background-color: rgba( 19, 16, 44, 0.505 );
+    font-family: 'Ceviche One', cursive;
+    margin: 5px 0;
+}
+.navbar-custom a{
+    color: aliceblue;
+}
+.navbar-custom li{
+    font-size: 2.5em;
+    margin-right: 35px;
+    padding: 10px 0;
+}
+.navbar-custom li:hover{
+    border-bottom: 1px solid #766ec3;
+    padding-bottom: 9px;
+}
+.navbar-custom li a:hover{
+    background-color: transparent;
+    color: gainsboro;
+}
+.navbar-custom li.active{
+    border-bottom: 1px solid #766ec3;
+    padding-bottom: 9px;
+}
+.navbar-custom li.active a{
+    color: gainsboro;
+}
+.navbar-custom li a:focus{
+    background-color: transparent;
+    color: gainsboro;
+}
+.navbar-header .navbar-toggle .icon-bar{
+    background-color: aliceblue;
+}
+#navbar_top{
+    z-index: 9998;
+}
+
+.nav .open a, .nav .open a:focus, .nav .open a:hover{
+    background-color: transparent;
+}
+.dropdown-menu li a{
+    color: aliceblue;
+}
+.dropdown-menu{
+    background-color: rgba( 19, 16, 44, 0.505 );
+}
+
+/*Overflow Handler*/
+.profileExpandable, .calenderExpandable, .eventCalenderExpandable{
+    background-color: aliceblue;
+    z-index: 9997;
+    position: absolute;
+    max-height: 0;
+    max-width: 0;
+  overflow: auto;
+  transition: max-width .6s, max-height .6s;
+}
+.profileExpandable{
+    right: 0;
+    top: 290px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.calenderExpandable, .eventCalenderExpandable{
+    left: 50px;
+    top: 270px;
+    border-radius: 20px;
+    background-color: rgba( 19, 16, 44, 0.805 );
+    color: aliceblue;
+}
+
+.mycalenderbutton{
+    width: 40px;
+    height: 40px;
+    z-index: 9999;
+    display: block;
+    position: absolute;
+    left: 10px;
+}
+.myeventcalenderbutton{
+    width: 40px;
+    height: 40px;
+    z-index: 9999;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: -570px;
+}
+
+.outerContent {
+    max-height: 0;
+  overflow: hidden;
+  transition: max-height .6s;
+}
+.expandable {
+  max-height: 4rem;
+  overflow: hidden;
+  transition: max-height .6s;
+}
+.expandable__btn__wrapper {
+	width: 40px;
+	height: 40px;
+	float: right;
+}
+.expandable__btn {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: rgba( 73, 63, 99);
+	border-radius: 50%;
+	transition: transform 0.3s;
+  outline: none;
+  cursor: pointer;
+	z-index: 3;
+}
+.content__btn {
+	padding: 0;
+    margin: 0;
+}
+.expandable__btn:before, .expandable__btn:after {
+	content: '';
+	position: absolute;
+	border-radius: 5px;
+	background-color: #ffffff;
+}
+.expandable__btn:before {
+	width: 3px;
+  height: 20px;
+  top: 10px;
+  left: 18px;
+}
+.expandable__btn:after {
+  width: 20px;
+  height: 3px;
+  top: 18px;
+  left: 10px;
+}
+.expandable__btn--active {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.expandable__btn--active:before {
+  content: none;
+}
+.btn {
+	border: none;
+	font-family: 'Ceviche One', cursive;
+    font-size: 1.25em;
+	color: aliceblue;
+	padding: 10px 16px;
+	margin-right: 0px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: .3s background-color;
+	transition: .3s background-color, .3s transform;
+}
+.content__btn__wrapper {
+    margin-right: 5px;
+    padding: 0;
+}
+.playerExpander{
+    margin-left: 5px;
+}
+
+/*Profile Pic*/
+.navProfilePic{
+    height: 40px;
+    border-radius: 50%;
+    margin: -10px -7px;
+}
+.smProfilePic{
+    height: 40px;
+    border-radius: 50%;
+}
+.tableProfilePic{
+    width: 100px;
+}
+.profilePicContainer{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.organiserPic{
+    max-width: 40%;
+    max-height: 40vw;
+    border-radius: 50%;
+}
+.playerPic{
+    max-width: 30%;
+    max-height: 30vw;
+    border-radius: 50%;
+}
+.profilePic{
+    max-width: 60%;
+    max-height: 60vw;
+    border-radius: 50%;
+}
+.profilePageProfilePic{
+    height: 200px;
+    margin-left: 15px;
+}
+.gamePageProfilePic{
+    width: 300px;
+    margin-right: 15px;
+}
+
+/*Header Jumbotron Style*/
+.jumbotron{
+    background-color: rgba( 19, 16, 44, 0.15 );
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.8px;
+    
+}
+.jumbotron h1{
+    font-size: 5.5em;
+}
+.logo{
+    height: 100px;
+    margin-bottom: -30px;
+    margin-top: 10px;
+}
+#indexPageHead{
+    font-family: 'Ceviche One', cursive;
+}
+
+/*Style Icons with Grid System*/
+#serviceContainer{
+    color: aliceblue;
+    text-align: center;
+}
+#serviceContainer p{
+    font-size: 1.2em;
+}
+#serviceContainer .btn{
+    font-family: 'Ceviche One', cursive;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.singleService{
+    background-color: rgba( 19, 16, 44, 0.15 );
+    padding-top: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.singleService:hover{
+    background-color: rgba( 19, 16, 44, 0.45 );
+}
+.bodyImage{
+    width: 180px;
+    height: 150px;
+}
+.patreonImage{
+    width: 340px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.patreonImage2{
+    width: 135px;
+    height: 135px;
+}
+.logoText{
+    margin: 0;
+}
+
+.ldoA h2{
+    font-family: 'Frijole', cursive;
+}
+.patreon h2{
+    font-family: 'Ceviche One', cursive;
+    font-size: 4em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.adventurerManager h2{
+    font-family: 'Redressed', cursive;
+    font-size: 3em;
+}
+.detectAdventure h2{
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 3.5em;
+}
+
+/*Style Contact Button*/
+/*Buttons*/
+.btnSignup{    
+    border: none;
+    border-radius: 15px;
+    color: aliceblue;
+    font-family: 'Ceviche One', cursive;
+    font-size: 2.5em;
+    padding: 10px 100px;
+    letter-spacing: 1.5px;
+}
+.btnColor{
+    background: linear-gradient(rgba( 102, 93, 187, 0.877 ), rgba( 137, 128, 218, 0.415 ));
+    color: aliceblue;
+}
+.btnColor:hover, .btnColor:active{
+    background-color: rgba( 105, 79, 169);
+    color: aliceblue;
+}
+.btnDone{
+    background-color: rgba( 57, 156, 52, 0.803 );
+    color: aliceblue;
+}
+.btnDone:hover, .btnDone:active{
+    background-color: rgba( 57, 156, 52);
+    color: aliceblue;
+}
+
+.signup{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 80px;   
+}
+.signuptop{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;   
+}
+.cancelBtn{
+    background-color: rgba( 19, 16, 44, 0.505 );
+}
+
+.msgBtn{
+    margin-bottom: 10px;
+}
+
+.lrgBtn{
+    margin-top: 5px;
+    width: 200px;
+    font-size: 30px;
+}
+
+/*Modals*/
+.modal{
+    margin: 0;
+    z-index: 9999;
+    color: black;
+}
+.modal-backdrop{
+    z-index: 99;
+}
+.ui-front{
+    z-index: 9999;
+}
+.modal .checkbox-inline label{
+    margin-right: 20px;
+}
+.modal-content{
+    background: url(images/pngwing.com.png) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.modal-header{
+    color: aliceblue;
+}
+
+/*Forms*/
+#dobLabel{
+    margin-top: 10px;
+}
+.modal-body .form-control:focus{
+    border-color: #b673f1;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba( 182, 115, 241, 0.492 );  
+}
+#moreinfo{
+    margin-top: 0px;
+}
+
+/*Profile Bar*/
+.navbarUser{
+    border: 1px solid lightgray;
+    min-height: 125px;
+}
+.navbaruserpicdiv{
+    margin-top: 10px;
+    border-radius: 50px;
+}
+.repCol{
+    border-top: 1px solid lightgray;
+    padding-left: 0;
+}
+#repLabel{
+    padding-left: 5px;
+}
+.profilebarcontent{
+    padding: 10px;
+}
+.profilebarInlineHeader{
+    display: flex;
+    align-items: center;
+}
+.profilebarInlineHeader a{
+    color: black;
+}
+.profilebarTitle{
+    margin-right: 80px;
+}
+#profilebarLabel{
+    font-size: 15px;
+    color: dimgray;
+}
+.profileActionTitle{
+    font-size: 20px;
+}
+.profileActions a{
+    font-size: 15px;
+    color: dimgray;
+}
+.profilebarbody ul{
+    padding-left: 15px;
+}
+.profilebarheader, .profilebarbody, .profilebarfooter{
+    border-bottom: 1px solid dimgray;
+    margin-bottom: 10px;
+}
+.profileMenuPatreon{
+    width: 50px;
+}
+.patreonIntro p{
+    font-size: 15px;
+    color: dimgray;
+    margin: 0;
+    padding: 0;
+}
+.patreonPitch{
+    font-size: 15px; 
+    color: dimgray;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+.profileModalFooter{
+    text-align: left;
+}
+.modalProfilePic{
+    width: 100px;
+}
+
+.profilebarwrapper{
+    display: none;
+    text-align: right;
+}
+
+.profilebarsticky{
+    position: fixed;
+    top: 90px;
+    right: 0;
+}
+
+.friendTable, .repTable{
+    margin-bottom: 0;
+}
+.repTable tr:hover, .friendTable tr:hover, .statsTable tr:hover{
+    color: dimgray;
+}
+
+.grn{
+    color: lightgreen;
+}
+.drkgrn{
+    color: limegreen;
+}
+.red{
+    color: crimson;
+}
+
+/*Messages*/
+.pillsContainer{
+    background-color: gray;
+}
+
+
+/*Search Bar*/
+.inlineButtons{
+    display: flex;
+    align-items: center;
+}
+#searchContainer{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-align: right;
+}
+.form-inline button{
+    display: inline-block; 
+}
+.btnSearch{
+    padding: 5px 10px;
+    margin-top: -5px;
+}
+.searchInput{
+    margin-top: 5px;
+}
+.searchInput{
+    font-size: 1.4em;
+    color: gray;
+}
+.searchInput:focus{
+    border-color: #076136;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba( 57, 156, 52, 0.8 );
+}
+.searchInput{
+    width: 60%;
+}
+
+/*Calender Style*/
+.calendersticky{
+    position: fixed;
+    top: 90px;
+    left: 50px;
+}
+.calendereventsticky{
+    position: fixed;
+    top: 90px;
+    left: 50px;
+}
+#showEventCalendar{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.cal-day-today{
+    background-color: rgba( 182, 115, 241, 0.492 )
+}
+.cal-day-weekend span[data-cal-date]{
+    color: plum;
+}
+.cal-day-today span[data-cal-date] {
+  color: #211a3c;
+}
+.cal-year-box .row-fluid:hover, .cal-row-fluid:hover{
+    background-color: transparent;
+}
+.cal-year-box [class*="span"]{
+    min-height: 76px;
+}
+#cal-day-tick{
+    background-color: transparent;
+}
+[class*="cal-cell"]:hover {
+  background-color: transparent;
+}
+#cal-week-box{
+    background-color: rgba( 182, 115, 241, 0.492 )
+}
+#cal-day-box .cal-day-hour:nth-child(odd){
+    background-color: transparent;
+}
+.day-highlight.dh-event-important span:hover,
+.day-highlight.dh-event-important span,
+.day-highlight.dh-event-important a:hover,
+.day-highlight.dh-event-important a{
+    color: slategrey !important;
+}
+.day-highlight.dh-event-warning span:hover,
+.day-highlight.dh-event-warning span,
+.day-highlight.dh-event-warning a:hover,
+.day-highlight.dh-event-warning a {
+    color: slategrey !important;
+}
+.day-highlight.dh-event-info span:hover,
+.day-highlight.dh-event-info span,
+.day-highlight.dh-event-info a:hover,
+.day-highlight.dh-event-info a {
+    color: slategrey !important;
+}
+.day-highlight.dh-event-inverse span:hover,
+.day-highlight.dh-event-inverse span,
+.day-highlight.dh-event-inverse a:hover,
+.day-highlight.dh-event-inverse a {
+    color: slategrey !important;
+}
+.day-highlight.dh-event-success span:hover,
+.day-highlight.dh-event-success span,
+.day-highlight.dh-event-success a:hover,
+.day-highlight.dh-event-success a {
+    color: slategrey !important;
+}
+.day-highlight.dh-event-special span:hover,
+.day-highlight.dh-event-special span,
+.day-highlight.dh-event-special a:hover,
+.day-highlight.dh-event-special a {
+    color: slategrey !important;
+}
+
+.mycalenderbuttonFixed{
+        position: fixed;
+        top: 60px;
+        left: 10px;
+    }
+
+/*Footer Style*/
+.navbar-footer{
+    background-color: rgba( 19, 16, 44, 0.505 );
+    font-family: 'Ceviche One', cursive;
+    margin: 5px 0 0 0;
+    bottom: 0;
+}
+.navbar-footer .navbar-header{
+    margin-top: 10px;
+}
+.navbar-footer a{
+    color: aliceblue;
+    font-size: 2em;
+}
+.navbar-footer li{
+    margin-right: 5px;
+    padding: 10px 0 0 0;
+}
+.navbar-footer .linkContainer li:hover{
+    border-top: 1px solid #766ec3;
+    padding-top: 9px;
+}
+.navbar-footer li a:hover{
+    background-color: transparent;
+    color: gainsboro;
+}
+.navbar-footer .linkContainer li.active{
+    border-top: 1px solid #766ec3;
+    padding-top: 9px;
+}
+.navbar-footer li.active a{
+    color: gainsboro;
+}
+.navbar-footer li a:focus{
+    background-color: transparent;
+    color: gainsboro;
+}
+.navbar-header .navbar-toggle .icon-bar{
+    background-color: aliceblue;
+}
+#credits{
+    color: #afbcfc;
+}
+.imageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+}
+.footerImage{
+    width: 40px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+/*Spinner*/
+#spinner{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -42px;
+    margin-left: -32px;
+    height: 85px;
+    text-align: center;
+    color: green;
+    z-index: 1100;
+}
+
+.tncLink{
+    color: darkblue;
+}
+
+/*Sidebars*/
+#sidebarPhone{
+    display: none;
+}
+.sidebarContainer{
+    background-color: rgba( 19, 16, 44, 0.505 );
+    color: aliceblue;
+    border-radius: 10px;
+}
+.sidebarContainer li a:hover, .sidebarContainer li a:focus{
+    background-color: transparent;
+    color: gainsboro;
+}
+
+#lessonContainer{
+    background-color: rgba( 19, 16, 44, 0.505 );
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#lessonContainer a:hover, #lessonContainer a:focus{
+    color: gainsboro;
+}
+
+/*Media Queries*/
+@media (min-width: 1316px){
+    .navbar-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+}
+@media (min-width: 1116px) and (max-width: 1315px){
+    .navbar-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .cartPicture{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .plusMinus{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    div.modal#profileModal{
+      left:-100px;
+    }
+}
+@media (min-width: 1001px) and (max-width: 1115px){
+    .navbar-center{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .navbar-center li{
+        margin-right: 10px;
+    }
+    .footerImage{
+        margin-right: 5px;
+    }
+    div.modal#profileModal{
+      left:-100px;
+    }
+    .calenderExpandable, .eventCalenderExpandable{
+        left: 5px;
+        top: 310px;
+    }
+    .calendersticky{
+        top: 100px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1000px){
+    .navbar-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .navbar-center li{
+        font-size: 2em;
+        margin-right: 5px;
+    }
+    .footerImage{
+        margin-right: 0;
+    }
+    .navbar-footer a{
+        font-size: 1.5em;
+    }
+    .calenderExpandable, .eventCalenderExpandable{
+        left: 5px;
+        top: 310px;
+    }
+    .calendersticky{
+        top: 100px;
+    }
+    div.modal#profileModal{
+      left:-200px;
+    }
+    .linkContainer li{
+        margin-right: 0;
+    }
+    .bodyImage{
+        width: 150px;
+    }
+    .top{
+        margin-bottom: 23px;
+    }
+    #serviceContainer{
+        padding: 10px 15px;
+    }
+    
+}
+@media (min-width: 440px) and (max-width: 767px){
+    .jumbotron h1{
+        font-size: 3.5em;
+    }
+    .profilebarwrapper{
+        width: 40px;
+        height: 40px;
+        z-index: 9999;
+        display: block;
+        margin: 10px 15px 0 0;
+        position: absolute;
+        right: 60px;
+        top: 175px;
+    }
+    .profilebarpic{
+        z-index: 9999;
+    }
+    .navprofilebarbutton{
+        display: none;
+    }
+    .phoneProfileBarFixed{
+        position: fixed;
+        right: 60px;
+        top: 11px;
+    }
+    .organiserPic{
+        display: none;
+    }
+    .calenderExpandable, .eventCalenderExpandable{
+        left: 20px;
+        right: 20px;
+        top: 270px;
+        padding-left: 20px;
+    }
+    .calendersticky{
+        top: 100px;
+    }
+    .bodyImage{
+        width: 120px;
+    }
+    .singleCell{
+        margin-top: 30px
+    }
+    .serviceDescription h2{
+        display: none;
+    }
+    .btnSignup{    
+        padding: 10px 10px;
+    }
+    .nav li.profilePicMod{
+        display: block;
+    }
+    .nav li.profilePicList{
+        display: none;
+    }
+    .gamePageProfilePic{
+        width: 100%;
+        margin-right: 10px;
+    }
+    #sidebarPhone{
+        display: block;
+    }
+    #sidebarDesk{
+        display: none;
+    }
+
+}
+@media (max-width: 439px){
+    .jumbotron h1{
+        font-size: 2.5em;
+    }
+    .profilebarwrapper{
+        width: 40px;
+        height: 40px;
+        z-index: 9999;
+        display: block;
+        margin: 10px 15px 0 0;
+        position: absolute;
+        right: 60px;
+        top: 160px;
+    }
+    .profilebarpic{
+        z-index: 9999;
+    }
+    .navprofilebarbutton{
+        display: none;
+    }
+    .phoneProfileBarFixed{
+        position: fixed;
+        right: 60px;
+        top: 11px;
+    }
+    .navbar-footer a{
+        font-size: 1.5em;
+    }
+    .organiserPic{
+        display: none;
+    }
+    .profilePageProfilePic{
+        height: auto;
+        width: 100px;
+        margin-left: 5px;
+    }
+    .calenderExpandable, .eventCalenderExpandable{
+        left: 0px;
+        top: 260px;
+        border-radius: 0;
+    }
+    .calenderExpandable .page-header, .eventCalenderExpandable .page-header{
+        margin-top: 20px;
+    }
+    .calendersticky{
+        top: 100px;
+        left: 0px;
+        right: 0px;
+    }
+    .cal-month-box .cal-day-today span[data-cal-date] {
+        font-size: 1.2em;
+    }
+    .bodyImage{
+        width: 120px;
+    }
+    .serviceDescription h2{
+        display: none;
+    }
+    .btnSignup{    
+        padding: 10px 10px;
+    }
+    
+    .nav li.profilePicMod{
+        display: block;
+    }
+    .nav li.profilePicList{
+        display: none;
+    }
+    
+    .gamePageProfilePic{
+        width: 120px;
+        margin-right: 5px;
+    }
+
+    
+    .centredCell{
+        margin-top: -35px;
+        margin-bottom: 5px;
+    }
+    
+    .singleCell{
+        margin-top: 30px
+    }
+    
+    #sidebarPhone{
+        display: block;
+    }
+    #sidebarDesk{
+        display: none;
+    }
+    
+}

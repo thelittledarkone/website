@@ -1,0 +1,485 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;    
+}
+
+#daPageHead{
+    font-family: 'Waiting for the Sunrise', cursive;
+}
+
+/*Main Page Contents*/
+.jumbotron{
+    text-align: center;
+    letter-spacing: 2.5px;
+    margin-top: 0px;
+    background-color: rgba( 73, 63, 99, 0.3);
+    color: aliceblue;
+}
+.jumbotron p{
+    font-size: 1.8em;
+}
+
+.displayInline{
+    display: inline-block;
+}
+
+#myContainer{
+    margin-bottom: 200px;
+}
+
+.service{
+    height: 350px;
+    width: 220px;
+    border: 50px double orange;
+    border-image-source: url(images/art-nouveau-border-34560.png);  
+    border-image-slice: 20%;
+    border-image-width: 50px;
+    border-image-outset: 0.3;
+    border-image-repeat: stretch;
+    background-color: aliceblue;
+}
+
+.eventContainerTitles .eventTitle{
+    font-size: 40px;
+}
+.eventContainerTitles .eventATitle{
+    font-size: 40px;
+}
+.eventContainerTitles .eventTitlePhone{
+    display: none;
+}
+
+#daTitle{
+    font-size: 50px;
+}
+
+.radiusForm{
+    position: absolute;
+    right: 20px;
+}
+.addEventForm{
+    position: absolute;
+    right: 70px;
+}
+.radiusForm select{
+    background-color: darkslategrey;
+}
+
+.jumbotron .gameeventTitle{
+    text-align: left;
+    font-size: 40px;
+}
+.jumbotron .editioneventTitle{
+    text-align: left;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+/*Search*/
+
+.noResults{
+    text-align: center;
+}
+.organiser{
+    font-size: 1.5em;
+}
+#searchResults{
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.searchJourneyContainer{
+    text-align: left;
+    min-width: 260px;
+}
+.searchJourneyContainer span{
+    font-size: 1.5em;
+}
+.searchPriceContainer{
+    text-align: right;
+    min-width: 70px;
+}
+.priceDetails{
+    font-size: 2em;
+}
+.seatDetails{
+    font-size: 1.5em;
+}
+.driverInfo{
+    text-align: left;    
+}
+.aboutDriver{
+    border-top: 1px solid aliceblue;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.journeySummary, .noResults{
+    text-align: left;
+    font-size: 1.5em;
+}
+
+/*My Event Container*/
+.eventContainerTitles{
+    display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+    width: 100%;
+}
+#myEventContainer, #eventOpenAttendingContainer, #eventAttendingContainer, #nearEventContainer{
+    margin-bottom: 80px;
+}
+#myEventContainer{
+    background-color: rgba( 73, 63, 99, 0.3);
+}
+#eventOpenAttendingContainer{
+    background-color: rgba( 73, 63, 99, 0.3);
+}
+#eventAttendingContainer{
+    background-color: rgba( 73, 63, 99, 0.3);
+}
+.eventContainer{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;
+    margin: 10px auto;
+}
+.detailsContainer{
+    text-align: left;
+    min-width: 260px;
+    padding: 0;
+}
+.detailsContainer span{
+    font-size: 1.5em;
+}
+.priceContainer{
+    text-align: right;
+    min-width: 70px;
+    padding: 5px;
+}
+.eventBtn{
+    margin-top: 20px;
+}
+.mainContent{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.individualEvent{
+    background-color: rgba( 73, 63, 99, 0.5);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 0 15px 0 0;
+}
+
+/*Events Near Me Container*/
+.searchTitle{
+    margin-top: 0;
+}
+#distance{
+    margin-top: 10px;
+}
+
+.organiser{
+    color: aliceblue;
+}
+
+.tblTitles{
+    max-width: 80px;
+}
+.expandableBtnContainer{
+    margin-bottom: 10px;
+}
+.content__btn__wrapper{
+    margin-bottom: 5px;
+}
+
+.eventPillsContainer{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.nearDetailsContainer a{
+    color: aliceblue;
+}
+
+/*Carousel*/
+.carousel-inner{
+    text-align: center;
+    min-height: 400px;
+}
+.carousel-inner img{
+    width: 400px;
+    margin: auto;
+}
+.carousel-inner .daicon{
+    width: 200px;
+}
+
+/*Media Queries*/
+@media (min-width: 1316px){
+    .navbar-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cartPicture{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .plusMinus{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+@media (min-width: 1116px) and (max-width: 1315px){
+    .navbar-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .cartPicture{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .plusMinus{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+@media (min-width: 1001px) and (max-width: 1115px){
+    .navbar-center{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .navbar-center li{
+        margin-right: 10px;
+    }
+    .footerImage{
+        margin-right: 5px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1000px){
+    .navbar-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .navbar-center li{
+        font-size: 2em;
+        margin-right: 5px;
+    }
+    .organiser{
+        font-size: 1em;
+    }
+    .footerImage{
+        margin-right: 0;
+    }
+    .navbar-footer a{
+        font-size: 1.5em;
+    }
+    .linkContainer li{
+        margin-right: 0;
+    }
+    .bodyImage{
+        width: 150px;
+    }
+    .top{
+        margin-bottom: 23px;
+    }
+    #serviceContainer{
+        padding: 10px 15px;
+    }
+    
+    .plusMinus{
+        padding: 5px 0 5px 0;
+    }
+    .cartCard{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .cartAmount{
+        text-align: center;
+    }
+    
+    
+}
+@media (min-width: 440px) and (max-width: 767px){
+    .searchTitle{
+        font-size: 20px;
+    }
+    .attendingLogo{
+        margin-left: 15px;
+    }
+    #distance{
+        font-size: 15px;
+        width: 50%;
+    }
+    .btnSearch{
+        margin-top: -3px;
+        margin-bottom: 5px;
+    }
+    .priceContainer{
+        text-align: left;
+        display: flex;
+        padding-left: 10px;
+    }
+    .individualEvent{
+        padding-left: 15px;
+    }
+    .priceStats, .priceBtns{
+        display: inline-block;
+    }
+    .priceBtns{
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .eventBtn{
+        margin-top: 0px;
+    }
+    .msgBtn{
+        margin-bottom: 0px;
+    }
+    #daTitle{
+        font-size: 35px;
+    }
+    .detailsContainer{
+        margin-bottom: -30px;
+    }
+    .bodyImage{
+        width: 120px;
+    }
+    .imageContainer{
+        margin-left: 140px;
+    }
+    .singleCell{
+        margin-top: 30px
+    }
+    .serviceDescription h2{
+        display: none;
+    }
+    .btnSignup{    
+        padding: 10px 10px;
+    }
+    
+    .eventContainerTitles .eventTitle{
+        font-size: 30px;
+    }
+    .eventContainerTitles .eventATitle{
+        font-size: 30px;
+    }
+    #radiusLabel{
+        display: none;
+    }
+    .radiusBtn{
+        padding: 5px;
+    }
+    .addEventForm{
+        right: 20px;
+    }
+    
+    .tldoCarousel{
+        font-size: 1em;
+    }
+    
+    
+    .plusMinus{
+        padding: 5px 0 5px 0;
+    }
+    .cartCard{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .cartAmount{
+        text-align: center;
+    }
+}
+@media (max-width: 439px){
+    .navbar-footer a{
+        font-size: 1.5em;
+    }
+    .attendingLogo{
+        margin-left: 15px;
+        margin-top: -15px;
+    }
+    .individualEvent{
+        padding-left: 15px;
+    }
+    .priceContainer{
+        text-align: left;
+        display: flex;
+        padding-left: 10px;
+    }
+    .priceStats, .priceBtns{
+        display: inline-block;
+    }
+    .priceBtns{
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .eventBtn{
+        margin-top: 0px;
+    }
+    .msgBtn{
+        margin-bottom: 0px;
+    }
+    #daTitle{
+        font-size: 35px;
+    }
+    .detailsContainer{
+        margin-bottom: -20px;
+    }
+    .bodyImage{
+        width: 120px;
+    }
+    .serviceDescription h2{
+        display: none;
+    }
+    .btnSignup{    
+        padding: 10px 10px;
+    }
+    
+    .eventContainerTitles .eventTitle{
+        display: none;
+        font-size: 20px;
+    }
+    .eventContainerTitles .eventATitle{
+        font-size: 20px;
+    }
+    .eventContainerTitles .eventTitlePhone{
+        display: block;
+        font-size: 20px;
+    }
+    #radiusLabel{
+        display: none;
+    }
+    .radiusBtn{
+        padding: 5px;
+    }
+    .addEventForm{
+        right: 20px;
+    }
+    
+    .tldoCarousel{
+        font-size: 33px;
+    }
+    
+    .singleCell{
+        margin-top: 30px
+    }
+    
+    
+    .plusMinus{
+        padding: 5px 0 5px 0;
+    }
+    .cartCard{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .cartAmount{
+        text-align: center;
+    }
+}

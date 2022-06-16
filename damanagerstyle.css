@@ -1,0 +1,27 @@
+body{
+    font-family: 'Rubik', sans-serif;
+}
+.evtBtn{
+    font-size: 1.45em;
+}
+
+@media (min-width: 440px) and (max-width: 767px){
+    .evtBtn{
+        margin-top: 5px;
+        font-size: 1.25em;
+    }
+    .eventBtnContainer{
+        padding-left: 10px;
+    }
+    
+}
+@media (max-width: 439px){
+    .evtBtn{
+        margin-top: 5px;
+        font-size: 1.25em;
+    }
+    .eventBtnContainer{
+        padding-left: 10px;
+    }
+    
+}

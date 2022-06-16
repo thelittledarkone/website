@@ -1,0 +1,235 @@
+/*Header Jumbotron Style*/
+.jumbotron{
+    font-family: 'Frijole', cursive;
+    background-color: rgba( 19, 16, 44, 0.15 );
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.8px;
+    
+}
+.jumbotron h1{
+    font-size: 3.5em;
+}
+.logo{
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+/*Style Icons with Grid System*/
+/*SHOP CSS*/
+.shoppingCart{
+    position: absolute;
+    left: 10px;
+    padding: 5px;
+    font-size: 25px;
+    font-family: 'Ceviche One', cursive;
+    border-radius: 15px;
+    background-color: rgba( 46, 40, 153, 0.648 );
+}
+
+.shopItem{
+    width: 180px;
+}
+#shopContainer{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.panel{
+    background-color: rgba( 73, 63, 99, 0.5);
+    border: none;
+}
+.panel-warning .panel-heading{
+    background-color: rgba( 73, 63, 99, 0.5);
+    min-height: 255px;
+}
+.panel-body{
+    background-color: rgba( 46, 40, 153, 0.648 );
+    min-height: 320px;
+}
+.panel-text{
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.panel-title{
+    margin: 5px;
+    font-size: 20px;
+}
+s{
+    color: blueviolet;
+    margin-right: 5px;
+}
+#cart_count{
+    text-align: center;
+    border-radius: 3rem;
+    background-color: rgba( 173, 168, 168, 0.988 );
+    padding: 0 0.9rem 0.3rem 0.7rem;
+    color: rgba( 46, 40, 153, 0.848 );
+    margin-left: 3px;
+}
+
+#cartContainer{
+    margin-bottom: 150px;
+    background-color: rgba( 19, 16, 44, 0.65 );
+    padding-top: 10px;
+    border-radius: 15px;
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+}
+.cart-items + .cart-items{
+    margin: 10px 0;
+}
+.cartTitle{
+    width: 100%;
+}
+.bordered{
+    
+}
+.bordered .btn{
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+    padding: 6px;
+}
+.bordered .btn-danger{
+    background-color: rgba( 237, 22, 22, 0.622 );
+}
+.bordered .btn-danger:hover{
+    background-color: red;
+}
+.bordered .btn-success{
+    background-color: rgba( 69, 237, 22, 0.622 );
+}
+.bordered .btn-success:hover{
+    background-color: forestgreen;
+}
+.cartPicture{
+    background-color: transparent;
+}
+.cartPicture img{
+    height: 145px;
+}
+.cartCard{
+    border-left: solid 1px grey;
+    background-color: rgba( 73, 63, 99, 0.5);
+    text-align: left;
+    color: aliceblue;
+    margin-left: 10px;
+}
+.cartCard h5{
+    color: black;
+    margin-top: 15px;
+}
+.cartAmount{
+    width: 25%;
+    display: inline;
+}
+.totalContainer{
+    font-family: 'Ceviche One', cursive;    
+    background-color: aliceblue;
+    padding: 3% 2%;
+}
+#totalPriceHeader{
+    color: black;
+    font-size: 3em;
+}
+.totals{
+    color: darkmagenta;
+    font-size: 1.7em;
+}
+.totalNo{
+    color: darkmagenta;
+    font-size: 1em;
+}
+.text-success{
+    font-size: 1em;
+}
+
+.refineForm select{
+    background-color: darkslategrey;
+}
+#refine, #sortby{
+    margin-right: 50px;
+}
+.refineBtn{
+    padding: 5px 10px;
+}
+#phoneForm{
+    display: none;
+}
+
+/*Media Queries*/
+@media (min-width: 992px){
+    .cartPicture{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .cartPicture img{
+        height: 140px;
+    }
+    .cartCard{
+        margin-left: 30px;
+        text-align: right;
+    }
+    .cartAmount{
+        text-align: center;
+    }
+    
+    
+}
+@media (min-width: 449px) and (max-width: 767px){
+    .jumbotron h1{
+        font-size: 2em;
+    }
+    .searchInput {
+        width: 40%;
+    }
+    .cartPicture img{
+        height: 120px;
+    }
+    .cartCard{
+        margin-left: 30px;
+        text-align: right;
+    }
+    .cartAmount{
+        text-align: center;
+    }
+    #phoneForm{
+        display: block;
+    }
+    #dtForm{
+        display: none;
+    }
+}
+@media (max-width: 448px){
+    .jumbotron h1{
+        font-size: 1.2em;
+    }
+    .searchInput {
+        width: 40%;
+    }
+    .cartPicture img{
+        height: 100px;
+    }
+    .cartCard{
+        margin-left: 30px;
+        text-align: right;
+    }
+    .cartAmount{
+        text-align: center;
+    }
+    #phoneForm{
+        display: block;
+    }
+    #dtForm{
+        display: none;
+    }
+}
+
